@@ -6,8 +6,7 @@ const (
 	NetconfBegin = "<"
 	MsgSeperator = "]]>]]>"
 
-	HelloRsp = `
-<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+	HelloRsp = `<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
 <capabilities>
 <capability>urn:ietf:params:netconf:base:1.1</capability>
 <capability>urn:ietf:params:netconf:capability:startup:1.0</capability>
