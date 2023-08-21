@@ -216,7 +216,7 @@ func main() {
 		recvChan:     make(chan []byte),
 		packetBuffer: []byte{},
 	}
-	go tio.SendBundling([]string{payload.HelloRsp, payload.A3TopoEventNtf, payload.OperTrxStateNtf})
+	go tio.SendBundling([]string{payload.MeasurementResultStats, payload.MeasurementResultStats, payload.MeasurementResultStats})
 
 	allMsgBytes, _ := tio.PacketBundling() // version recursive
 	//allMsgBytes, _ := tio.WaitForFunc() // version iteration
